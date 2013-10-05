@@ -6,7 +6,7 @@
  *
  * @category    plugin
  * @version     0.2
- * @author		RuSS_lan (russandrussky@gmail.com)
+ * @author	RuSS_lan (russandrussky@gmail.com)
  * @internal    @properties &tabs_no=Номер закладки, которую нужно переместить;text;3,2
  * @internal    @events OnDocFormRender
  * @internal    @modx_category Content 
