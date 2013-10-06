@@ -10,7 +10,7 @@
  * @internal    @properties &tabs_no=Номер закладки, которую нужно переместить;text;3,2
  * @internal    @events OnDocFormRender
  * @internal    @installset base
- * @internal    @disabled 1
+ * @internal    @modx_category Content 
  */
 
 /*
@@ -31,13 +31,13 @@ $tab_ID=explode(',',$tabs_no);
 if ($e->name == "OnDocFormRender") 
 {
 	foreach($tab_ID as $key=>$value){
-        $tabs_move.="jQuery('.tab-row').append(jQuery('h2.tab:nth-child(".$value.")').get(0));\n";
+        $tabs_move.="j('.tab-row').append(j('h2.tab:nth-child(".$value.")').get(0));\n";
     }
     $html = "
           <script type='text/javascript'>
-              jQuery.noConflict();
-              jQuery(document).ready(function() {
-			 ".$tabs_move."
+              var j = jQuery.noConflict();
+              j(document).ready(function() {
+			 		".$tabs_move."
               });
           </script>
     ";
