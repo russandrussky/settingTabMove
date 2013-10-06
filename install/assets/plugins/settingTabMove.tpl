@@ -21,7 +21,6 @@
  *
  * Configuration:
  * check the OnDocFormRender event
- * add properties  &tabs_no=Номер закладки, которую нужно переместить;text;3,2
  * Version 0.2
  * Contact E-mail: russandrussky@gmail.com
  *          skype: g_r_u_v
@@ -40,7 +39,7 @@ if ($e->name == "OnDocFormRender")
               var j = jQuery.noConflict();
               j(document).ready(function() {
 				  ".$tabs_move."
-              })
+              });
           </script>
     ";
     $e->output($html);
