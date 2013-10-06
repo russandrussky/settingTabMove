@@ -30,7 +30,7 @@ $tab_ID=explode(',',$tabs_no);
 if ($e->name == "OnDocFormRender") 
 {
 	foreach($tab_ID as $key=>$value){
-        $tabs_move.="$j('.tab-row').append($j('h2.tab:nth-child(".$value.")').get(0));";
+        $tabs_move.="$j('.tab-row').append($j('h2.tab:nth-child(".$value.")').get(0));\n";
     }
     $html = "
           <script type='text/javascript'>
