@@ -10,7 +10,7 @@
  * @internal    @properties &tabs_no=Номер закладки, которую нужно переместить;text;3,2
  * @internal    @events OnDocFormRender
  * @internal    @installset base
- * @internal    @disabled 0
+ * @internal    @disabled 1
  */
 
 /*
