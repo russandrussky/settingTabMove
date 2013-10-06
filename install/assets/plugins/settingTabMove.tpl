@@ -33,11 +33,10 @@ if ($e->name == "OnDocFormRender")
         $tabs_move.="j('.tab-row').append(j('h2.tab:nth-child(".$value.")').get(0));";
     }
     $html = "
-          <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'  type='text/javascript'></script>
           <script type='text/javascript'>
               var j = jQuery.noConflict();
               j(document).ready(function() {
-				  ".$tabs_move."
+			 ".$tabs_move."
               });
           </script>
     ";
